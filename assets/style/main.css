@@ -22,9 +22,9 @@ a {
 }
 
 @media (min-width: 768px) {
-a {
-  color: #000;
-  text-decoration: none;
+  a {
+    color: #000;
+    text-decoration: none;
   }
 }
 
@@ -35,7 +35,7 @@ a i {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   vertical-align: bottom;
   border-radius: 0.5rem;
@@ -62,23 +62,23 @@ ul {
 
 /* ブルー色ボタン */
 .button-blue {
-    max-width: 22rem;
-    height: 4rem;
-    padding: 1rem;
-    margin: auto;
-    font-size: 1.2rem;
-    letter-spacing: -0.1rem;
-    background-color: #fff;
+  max-width: 22rem;
+  height: 4rem;
+  padding: 1rem;
+  margin: auto;
+  font-size: 1.2rem;
+  letter-spacing: -0.1rem;
+  background-color: #fff;
 }
 
 @media (min-width: 768px) {
-.button-blue {
-  width: 17.625rem;
-  padding: .8rem 1rem;
-  margin-right: 1.2rem;
-  font-size: 1.2rem;
-  background-color: #005bac;
-  border-radius: 5rem;
+  .button-blue {
+    width: 17.625rem;
+    padding: .8rem 1rem;
+    margin-right: 1.2rem;
+    font-size: 1.2rem;
+    background-color: #005bac;
+    border-radius: 5rem;
   }
 }
 
@@ -100,6 +100,12 @@ ul {
 
 .big {
   font-size: 2.2rem;
+}
+
+.point,
+.course,
+.price {
+  padding: 0 1rem;
 }
 
 /* ヘッダー
@@ -149,9 +155,9 @@ ul {
 
 /* ハンバーガー */
 @media (max-width: 768px) {
-.hamburger {
-  width: 70px;
-  background-color: #005bac;
+  .hamburger {
+    width: 70px;
+    background-color: #005bac;
   }
 }
 
@@ -188,7 +194,7 @@ ul {
 }
 
 @media (min-width: 768px) {
-.header-logo {
+  .header-logo {
     width: 17.6rem;
     padding: 0 1.2rem;
   }
@@ -266,14 +272,7 @@ ul {
 
 @media (max-width: 767px) {
   .hamburger-menu-list-group i {
-  font-size: 1.8rem;
-  }
-}
-
-@media (max-width: 767px) {
-  .hamburger-menu-bottom {
-    ;
-
+    font-size: 1.8rem;
   }
 }
 
@@ -285,7 +284,7 @@ ul {
 }
 
 @media (min-width: 768px) {
-.hamburger-menu .flex {
+  .hamburger-menu .flex {
     display: flex;
     flex-direction: row;
     column-gap: 2rem;
@@ -298,7 +297,7 @@ ul {
 }
 
 @media (min-width: 768px) {
-.hamburger-menu .flex i {
+  .hamburger-menu .flex i {
     display: none;
   }
 }
@@ -311,9 +310,9 @@ ul {
 }
 
 .cover-text {
-    position: absolute;
-    top: 2rem;
-    left: 1rem;
+  position: absolute;
+  top: 2rem;
+  left: 1rem;
 }
 
 .cover-img-inner::before {
@@ -345,11 +344,11 @@ ul {
 }
 
 .cover-text-p3 {
-    text-align: center;
+  text-align: center;
 }
 
 .main-visual .font-pink {
-line-height: 2.6rem;
+  line-height: 2.6rem;
 }
 
 .cover-text-bottom {
@@ -368,26 +367,90 @@ line-height: 2.6rem;
 /* 3contact
 ------------------------------------------ */
 .btn-contact {
-  margin-top: 1.5rem;
+  padding-top: 0.5rem;
 }
 
 .btn-contact .button {
-    width: 15.625rem;
-    height: 3rem;
-    padding: 0.6rem;
-    margin: 1rem auto;
-    font-size: 0.9375rem;
-    color: #fff;
+  width: 15.625rem;
+  height: 3rem;
+  padding: 0.6rem;
+  margin: auto;
+  font-size: 0.9375rem;
+  color: #fff;
 }
 
 .btn-contact .button-yellowgreen {
+  margin-top: 1rem;
   background-color: #77cb33;
 }
 
 .btn-contact .button-orange {
+  margin-top: 0.8rem;
   background-color: #f6aa00;
 }
 
 .btn-contact .button-emerald {
+  margin-top: 0.8rem;
   background-color: #3ac8ad;
+}
+
+/* point
+------------------------------------------ */
+.point .container {
+  padding: 1rem 0 5rem;
+}
+
+.point-title {
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.point .point-big {
+  font-family: Poppins, serif;
+  font-size: 2.5rem;
+}
+
+.feature-item-image {
+  margin-top: 0.6rem;
+}
+
+.point h3 {
+  line-height: 2;
+}
+
+.point-content-h4 {
+  margin-top: -0.9rem;
+  font-size: 1.25rem;
+}
+
+.point-content-text {
+  margin-top: 0.3rem;
+}
+
+.point-2 {
+  margin-top: 0.5rem;
+}
+
+.point .second .point-content-h4 {
+  margin-top: -0.6rem;
+  font-size: 1.25rem;
+  line-height: 1.35;
+}
+
+.point .second .point-content-text {
+  margin-top: 0.7rem;
+}
+
+.point .third .feature-item-image {
+  margin-top: 0.4rem;
+}
+
+.point .third .point-content-h4 {
+  margin-top: -0.7rem;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.point .third .point-content-text {
+  margin-top: 0.7rem;
 }
