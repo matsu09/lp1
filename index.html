@@ -35,32 +35,35 @@
   <body>
     <!-- ヘッダー -->
     <header class="header">
-      <h1 class="header-logo">
-        <a href="/">
-          <img src="/assets/image/logo.png" alt="Kira-Kira Juku">
-        </a>
-      </h1>
+      <div class="header-inner">
+        <h1 class="header-logo">
+          <a href="/">
+            <img src="/assets/image/logo.png" alt="Kira-Kira Juku">
+          </a>
+        </h1>
 
-      <!-- ハンバーガーボタン -->
-      <button type="button" class="hamburger-button">
-        <i class="bi bi-list"></i>
-        <!-- <span class="hamburger-button-bar"></span>
-        <span class="hamburger-button-bar"></span>
-        <span class="hamburger-button-bar"></span> -->
-      </button>
+        <!-- ハンバーガーボタン -->
+        <div class="hamburger">
+          <button type="button" class="hamburger-button">
+            <span class="hamburger-button-bar"></span>
+            <span class="hamburger-button-bar"></span>
+            <span class="hamburger-button-bar"></span>
+          </button>
+        </div>
 
-      <!-- ハンバーガーメニュー -->
-      <nav class="hamburger-menu header-nav">
-        <ul class="hamburger-menu-list-group header-nav-list-group flex outfit">
-          <li><a href="#course"><i class="button-icon button-pink-icon bi bi-arrow-right-short"></i>選ばれる３つの理由</a></li>
-          <li><a href="#point"><i class="button-icon button-pink-icon bi bi-arrow-right-short"></i>コース・目的</a></li>
-          <li><a href="#introduction"><i class="button-icon button-pink-icon bi bi-arrow-right-short"></i>費用</a></li>
-        </ul>
-        <!-- ボタン -->
-        <nav class="hamburger-nav-second">
-          <a href="/entry" class="button button-pink">入学説明会に申し込む</a>
+        <!-- ハンバーガーメニュー -->
+        <nav class="hamburger-menu header-nav">
+          <ul class="hamburger-menu-list-group header-nav-list-group flex outfit">
+            <li><a href="#course"><i class="button-icon button-pink-icon bi bi-arrow-right-short"></i>選ばれる３つの理由</a></li>
+            <li><a href="#point"><i class="button-icon button-pink-icon bi bi-arrow-right-short"></i>コース・目的</a></li>
+            <li><a href="#introduction"><i class="button-icon button-pink-icon bi bi-arrow-right-short"></i>費用</a></li>
+          </ul>
+          <!-- ボタン -->
+          <nav class="hamburger-menu-bottom">
+            <a href="/entry" class="button button-blue">入学説明会に申し込む</a>
+          </nav>
         </nav>
-      </nav>
+      </div>
     </header>
 
     <!-- メインビジュアル -->
@@ -312,7 +315,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery-smarttab@4/dist/js/jquery.smartTab.min.js"></script>
     <!-- Waypoints -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./js/main.js"></script>
+    <script src="/assets/script/main.js"></script>
 
 
   </body>
