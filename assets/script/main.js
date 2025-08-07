@@ -17,3 +17,9 @@ $(window).on('resize', function () {
   // ハンバーガーメニューを閉じる
   hamburger.removeClass('hamburger-menu-active');
 });
+
+
+// スマートタブ
+$('#smarttab').smartTab({
+  enableUrlHash: false // タブidにもとづいたURLハッシュの付与を無効
+});
