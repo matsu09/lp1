@@ -362,6 +362,21 @@ ul {
   }
 }
 
+.main-visual-image {
+min-height: 400px;
+}
+
+@media (max-width: 767px) {
+  .cover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+
 .cover-text {
   position: absolute;
   top: 2rem;
@@ -488,7 +503,7 @@ ul {
 /* 3contact
 ------------------------------------------ */
 @media (min-width: 768px) {
-  .main {
+  .btn {
     position: relative;
   }
 }
@@ -500,11 +515,20 @@ ul {
 @media (min-width: 768px) {
   .btn-contact {
     position: absolute;
+    top: -40px;
+    left: 0;
+    display: flex;
+    column-gap: 2.5rem;
+    justify-content: center;
+    width: 100%;
+    padding-top: 0;
+
+    /* position: absolute;
     top: 38.5rem;
     left: 25.5rem;
     display: flex;
     column-gap: 2.5rem;
-    padding-top: 0;
+    padding-top: 0; */
   }
 }
 
@@ -757,13 +781,15 @@ ul {
 }
 
 @media (min-width: 768px) {
-  .works-tab-content-item {
+  .works-tab-content-image {
     overflow: hidden;
+    border-radius: 0.5rem;
   }
 
   .works-tab-content-item img {
-    height: 346px;
-    transition: transform .6s ease;/* ゆっくり変化させる */
+    transition: transform .6s ease;
+
+    /* ゆっくり変化させる */
   }
 
   .works-tab-content-item:hover img {
@@ -785,7 +811,7 @@ ul {
 
 /* タブナビゲーション */
 .course .nav {
-  padding: 0 1rem;
+  padding: 0 1.3rem;
 }
 
 .tab.st>.nav {
@@ -1099,7 +1125,7 @@ table {
     width: 100%;
     height: 20rem;
     background-image: url("/assets/image/pht_qa-pc.jpg");
-    background-size: cover;
+    background-size: 100%;
   }
 
   .contact-guidance2 {
@@ -1107,19 +1133,23 @@ table {
     width: 100%;
     height: 20rem;
     background-image: url("/assets/image/pht_classrooms-pc.jpg");
-    background-size: cover;
+    background-size: 100%;
   }
 }
 
 @media (min-width: 768px) {
   .contact-guidance1:hover {
-    transform: scale(1.2);
+    background-size: 120%;
+
+    /* transform: scale(1.2); */
   }
 }
 
 @media (min-width: 768px) {
   .contact-guidance2:hover {
-    transform: scale(1.2);
+    background-size: 120%;
+
+    /* transform: scale(1.2); */
   }
 }
 
