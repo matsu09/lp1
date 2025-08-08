@@ -325,6 +325,7 @@ ul {
     padding-right: 2.9rem;
     font-size: 1.25rem;
     font-weight: 400;
+    white-space: nowrap;
   }
 }
 
@@ -755,6 +756,21 @@ ul {
   color: #000;
 }
 
+@media (min-width: 768px) {
+  .works-tab-content-item {
+    overflow: hidden;
+  }
+
+  .works-tab-content-item img {
+    height: 346px;
+    transition: transform .6s ease;/* ゆっくり変化させる */
+  }
+
+  .works-tab-content-item:hover img {
+    transform: scale(1.2);
+  }
+}
+
 
 /* タブ */
 .st-theme-basic {
@@ -1057,6 +1073,7 @@ table {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
   }
 }
 
@@ -1091,6 +1108,18 @@ table {
     height: 20rem;
     background-image: url("/assets/image/pht_classrooms-pc.jpg");
     background-size: cover;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-guidance1:hover {
+    transform: scale(1.2);
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-guidance2:hover {
+    transform: scale(1.2);
   }
 }
 

@@ -27,7 +27,7 @@ $('#smarttab').smartTab({
 
 // スクロールに付随したフェードイン
 $('.js-fadein-left').waypoint({
-  handler: function(direction) {
+  handler: function (direction) {
     // 要素が画面中央に来るとここが実行される
     if (direction === 'down') {
       /**
@@ -45,7 +45,7 @@ $('.js-fadein-left').waypoint({
   offset: '50%',
 });
 $('.js-fadein-right').waypoint({
-  handler: function(direction) {
+  handler: function (direction) {
     // 要素が画面中央に来るとここが実行される
     if (direction === 'down') {
       /**
@@ -61,4 +61,21 @@ $('.js-fadein-right').waypoint({
 
   // 要素が画面中央に来たらhandlerを実行
   offset: '50%',
+});
+
+// スムーススクロール
+jQuery(function () {
+  //#で始まるスタート地点をクリックしたときの処理
+  jQuery('a[href^="#"]').click(function () {
+    //スクロールのスピード
+    var speed = 800;
+    //スタート地点の値
+    var href = jQuery(this).attr("href");
+    //ゴール地点の値
+    var target = jQuery(href == "#" || href == "" ? 'html' : href);
+    //ゴール地点を数値として取得
+    var position = target.offset().top;
+    jQuery('body,html').animate({ scrollTop: position }, speed, 'swing');
+    return false;
+  });
 });

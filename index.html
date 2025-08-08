@@ -59,8 +59,8 @@
         <!-- ハンバーガーメニュー -->
         <nav class="hamburger-menu header-nav">
           <ul class="hamburger-menu-list-group header-nav-list-group flex outfit">
-            <li><a href="#course"><i class="button-icon button-pink-icon bi bi-arrow-right-short"></i>選ばれる３つの理由</a></li>
-            <li><a href="#point"><i class="button-icon button-pink-icon bi bi-arrow-right-short"></i>コース・目的</a></li>
+            <li><a href="#point"><i class="button-icon button-pink-icon bi bi-arrow-right-short"></i>選ばれる３つの理由</a></li>
+            <li><a href="#course"><i class="button-icon button-pink-icon bi bi-arrow-right-short"></i>コース・目的</a></li>
             <li><a href="#introduction"><i class="button-icon button-pink-icon bi bi-arrow-right-short"></i>費用</a></li>
           </ul>
           <!-- ボタン -->
@@ -100,21 +100,21 @@
         <div class="btn-contact">
           <!-- ボタン -->
           <div class="contact-button first">
-            <a href="#" class="button button-yellowgreen">入学のお問い合わせ</a>
+            <a href="/entry" class="button button-yellowgreen">入学のお問い合わせ</a>
           </div>
           <!-- ボタン -->
           <div class="contact-button second">
-            <a href="#" class="button button-orange">無料体験に申し込む</a>
+            <a href="/freetrial" class="button button-orange">無料体験に申し込む</a>
           </div>
           <!-- ボタン -->
           <div class="contact-button third">
-            <a href="#" class="button button-emerald">資料請求する</a>
+            <a href="/request" class="button button-emerald">資料請求する</a>
           </div>
         </div>
       </section>
 
       <!-- point -->
-      <section class="point">
+      <section class="point" id="point">
         <div class="container">
           <h2 class="point-title h2-title">選ばれる<span class="font-pink point-big">3</span>つの理由</h2>
           <!-- アイテム -->
@@ -178,20 +178,20 @@
         </div>
         <!-- ボタン -->
         <nav class="contact-button">
-          <a href="#" class="button button-blue">入学説明会に申し込む</a>
+          <a href="/entry" class="button button-blue">入学説明会に申し込む</a>
         </nav>
       </section>
 
       <!-- course -->
-      <section class="course">
+      <section class="course" id="course">
         <div class="course-container">
           <h2 class="h2-title outfit">コース・目的</h2>
           <!-- タブ -->
           <div id="smarttab" class="tab st-theme-basic">
             <!-- タブナビゲーション -->
             <ul class="nav">
-              <li><a class="nav-link" href="#tab-1">学年別から選ぶ</a></li>
-              <li><a class="nav-link" href="#tab-2">目的別から選ぶ</a></li>
+              <li><a class="nav-link" href="tab-1">学年別から選ぶ</a></li>
+              <li><a class="nav-link" href="tab-2">目的別から選ぶ</a></li>
             </ul>
             <div class="tab-content">
               <!-- タブ1 -->
@@ -200,7 +200,7 @@
                 <div class="works-tab-content-item">
                   <picture>
                     <source media="(min-width: 768px)" srcset="/assets/image/pht_cource01-pc.jpg">
-                    <img src="/assets/image/pht_cource01-sp.jpg" alt="">
+                    <img src="/assets/image/pht_cource01-sp.jpg" alt="" class="course-tab-image">
                   </picture>
                   <p class="works-tab-content-title"><i class="bi bi-arrow-right-short"></i>高卒生</p>
                 </div>
@@ -276,12 +276,12 @@
         </div>
         <!-- ボタン -->
         <nav class="contact-button">
-          <a href="#" class="button button-blue">入学説明会に申し込む</a>
+          <a href="/entry" class="button button-blue">入学説明会に申し込む</a>
         </nav>
       </section>
 
       <!-- priceコンテナ -->
-      <section class="price">
+      <section class="price" id="introduction">
         <div class="container" id="container">
           <div class="price-title">
             <h2 class="h2-title outfit">費用</h2>
@@ -356,18 +356,18 @@
         </div>
         <!-- ボタン -->
         <nav class="contact-button">
-          <a href="#" class="button button-blue">入学説明会に申し込む</a>
+          <a href="/entry" class="button button-blue">入学説明会に申し込む</a>
         </nav>
       </section>
 
       <!-- guidance -->
       <section class="guidance">
-        <div class="contact-guidance1">
+        <a href="/faq"  class="contact-guidance1">
           <p>よくあるご質問</p>
-        </div>
-        <div class="contact-guidance2">
+        </a>
+        <a href="/search"  class="contact-guidance2">
           <p>お近くの教室を探す</p>
-        </div>
+        </a>
       </section>
 
     </main>
