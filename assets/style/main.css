@@ -419,19 +419,19 @@ ul {
 
 @media (min-width: 768px) {
   .cover-text-top {
-    padding: 0.4rem 1.2rem 0;
+    padding: 1.3rem 1.2rem 0;
   }
 }
 
 .f-twelve {
   font-size: .68rem;
-  line-height: 1.5rem;
+  line-height: 2.2;
 }
 
 @media (min-width: 768px) {
   .f-twelve {
     font-size: 1.25rem;
-    line-height: 2.5rem;
+    line-height: 0.2;
   }
 }
 
@@ -447,7 +447,7 @@ ul {
 }
 
 .main-visual .font-pink {
-  line-height: 2.6rem;
+  line-height: 1.2;
 }
 
 .cover-text-bottom {
@@ -728,7 +728,6 @@ ul {
 }
 
 .course-container {
-  /* max-width: 67.5rem; */
   padding-top: 3.75rem;
   padding-bottom: 4rem;
   margin: auto;
@@ -775,7 +774,7 @@ ul {
 
 .tab.st>.nav {
   flex-direction: row !important;
-  column-gap: 0.5rem;
+  column-gap: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -790,8 +789,8 @@ ul {
 }
 
 .tab.st-theme-basic>.nav .nav-link {
-  padding-top: 2rem;
-  padding-bottom: 2.15rem;
+  padding-top: 2.1rem;
+  padding-bottom: 2rem;
   font-size: 1.1rem;
   line-height: 0;
   color: #000;
@@ -878,7 +877,15 @@ ul {
 /* price
 ------------------------------------------ */
 .price .container {
-  padding: 60px 0 64px;
+  padding: 60px 0 61px;
+}
+
+@media (min-width: 768px) {
+  .price .container {
+    max-width: 1200px;
+    padding: 64px 0 72px;
+    margin: 0 auto;
+  }
 }
 
 .price-title {
@@ -887,7 +894,7 @@ ul {
 
 @media (min-width: 768px) {
   .price-title {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 }
 
@@ -898,6 +905,51 @@ ul {
   }
 }
 
+table,
+th,
+td {
+  border-collapse: collapse;
+  border: #d8d8d8 solid 1px;
+}
+
+@media (max-width: 768px) {
+  table,
+  th {
+    border: none;
+  }
+}
+
+table {
+  width: 100%;
+  border: 3px #d8d8d8 solid;
+}
+
+
+.price .small .plan {
+  width: 33.2%;
+  height: 66px;
+}
+
+.price .small .cost {
+  width: 64.7%;
+}
+
+@media (min-width: 768px) {
+  .price .small .plan {
+    width: 23.5%;
+    height: 76px;
+    padding: 10px 0;
+    line-height: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .price .small .cost {
+    width: 75.3%;
+  }
+}
+
+
 .small thead {
   background-color: #f5f5f5;
 }
@@ -906,42 +958,108 @@ ul {
   padding: 18px 0 17px;
 }
 
-
-table,
-th,
-td {
-  border-collapse: collapse;
-  border: #d8d8d8 solid .0625rem;
-}
-
-table {
-  width: 100%;
-  border: 3px #d8d8d8 solid;
-}
-
 .small td {
-  padding: 8px 28px 7px;
+  padding: 10px 0;
+  text-align: center;
 }
 
 .small .width-right {
-  padding: 8px 27px 7px;
+  padding: 8px 0 7px;
+  letter-spacing: 0.5px;
 }
 
-.small td,
-.medium td {
-  text-align: center;
+.small .height1,
+.small .height2,
+.small .height3,
+.small .height4,
+.small .height5 {
+  height: 64px;
+}
+
+@media (min-width: 768px) {
+  .small .height1,
+  .small .height2,
+  .small .height3,
+  .small .height4,
+  .small .height5 {
+    height: 78px;
+  }
+}
+
+.small .height4 {
+  height: 65px;
+}
+
+@media (min-width: 768px) {
+  .small .height4 {
+    height: 79px;
+  }
+}
+
+.small .height6 {
+  height: 63px;
+}
+
+@media (min-width: 768px) {
+  .small .height6 {
+    height: 75px;
+    padding: 13px 0 10px;
+  }
 }
 
 .price .small .font-big {
   font-size: 1.7rem;
 }
 
+@media (min-width: 768px) {
+  .price .small .font-big {
+    font-size: 2rem;
+  }
+}
+
+.small .width-right .font-pink {
+  padding-right: 0.3rem;
+}
+
+@media (min-width: 768px) {
+  .small .width-right .font-pink {
+    padding-right: 0;
+  }
+}
+
+.small .table-small-right6 .font-pink {
+  padding-left: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .small .table-small-right6 .font-pink {
+    padding-left: 0;
+  }
+}
+
 .price .small .font-small {
   font-size: 1rem;
 }
 
+/* ページ読み込み直後にフェードイン要素を非表示にする */
+.js-fadein-left {
+  opacity: 0;
+}
+
+.js-fadein-right {
+  opacity: 0;
+}
+
 /* guidance
 ------------------------------------------ */
+@media (min-width: 768px) {
+  .guidance {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .contact-guidance1 {
   display: flex;
   align-items: center;
@@ -958,11 +1076,37 @@ table {
   background-size: cover;
 }
 
+@media (min-width: 768px) {
+  .contact-guidance1 {
+    justify-content: center;
+    width: 100%;
+    height: 20rem;
+    background-image: url("/assets/image/pht_qa-pc.jpg");
+    background-size: cover;
+  }
+
+  .contact-guidance2 {
+    justify-content: center;
+    width: 100%;
+    height: 20rem;
+    background-image: url("/assets/image/pht_classrooms-pc.jpg");
+    background-size: cover;
+  }
+}
+
 .guidance p {
   padding-left: 1rem;
   font-size: 1.3rem;
   color: #fff;
   letter-spacing: 1.2px;
+}
+
+@media (min-width: 768px) {
+  .guidance p {
+    padding-left: 0;
+    font-size: 2rem;
+    letter-spacing: 0.8px;
+  }
 }
 
 /* footer
@@ -975,8 +1119,23 @@ table {
   background-color: #f2f2f2;
 }
 
+@media (min-width: 768px) {
+  .footer {
+    height: 7.25rem;
+    padding: 2.5rem 0;
+    background-color: #f2f2f2;
+  }
+}
+
 .footer-copyright {
   padding-left: 1rem;
   color: #000;
   letter-spacing: 0.1px;
+}
+
+@media (min-width: 768px) {
+  .footer-copyright {
+    padding-left: 0;
+    font-size: 0.8rem;
+  }
 }
