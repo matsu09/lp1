@@ -34,6 +34,10 @@ a i {
   transition: all 0.3s;
 }
 
+a:hover {
+    opacity: 0.6;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -276,11 +280,6 @@ ul {
 }
 
 /* ナビゲーション */
-
-/* .hamburger-nav-second .button-pink {
-  margin-top: 1.2rem;
-} */
-
 @media (max-width: 767px) {
   .hamburger-menu-list-group {
     display: table;
@@ -348,6 +347,7 @@ ul {
     display: none;
   }
 }
+
 
 /* カバー
 ------------------------------------------ */
