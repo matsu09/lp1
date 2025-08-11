@@ -31,8 +31,8 @@ $(function () {
     $(".hamburger-button").removeClass("active");
     $(".header-nav").removeClass("active");
   });
+  // function
 
-  function
   // $('#drow a[href^="#"]').on('click', function() {
   //   $(".button").removeClass("active");
   //   $(".hamburger-menu-list-group").removeClass("active");
