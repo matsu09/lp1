@@ -21,21 +21,22 @@ $(window).on('resize', function () {
 
 
 $(function () {
-  // ハンバーガーボタンクリックで実行
-  // $(".hamburger-button").click(function () {
-  //   $(this).toggleClass("active");
-  //   $(".header-nav").toggleClass("active");
-  // });
-
-  // $(".drawer__nav__link").click(function () {
-  //   $(".hamburger-button").removeClass("active");
-  //   $(".header-nav").removeClass("active");
-  // });
-  // function
-  $('#drow a[href^="#"]').on('click', function() {
-    $(".button").removeClass("active");
-    $(".hamburger-menu-list-group").removeClass("active");
+  ハンバーガーボタンクリックで実行
+  $(".hamburger-button").click(function () {
+    $(this).toggleClass("active");
+    $(".header-nav").toggleClass("active");
   });
+
+  $(".drawer__nav__link").click(function () {
+    $(".hamburger-button").removeClass("active");
+    $(".header-nav").removeClass("active");
+  });
+
+  function
+  // $('#drow a[href^="#"]').on('click', function() {
+  //   $(".button").removeClass("active");
+  //   $(".hamburger-menu-list-group").removeClass("active");
+  // });
 });
 
 
