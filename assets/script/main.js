@@ -21,22 +21,12 @@ $(window).on('resize', function () {
 
 
 $(function () {
-  ハンバーガーボタンクリックで実行
-  $(".hamburger-button").click(function () {
-    $(this).toggleClass("active");
-    $(".header-nav").toggleClass("active");
-  });
-
+  // ハンバーガーメニュー内リンクをクリックで実行
   $(".drawer__nav__link").click(function () {
-    $(".hamburger-button").removeClass("active");
-    $(".header-nav").removeClass("active");
+    $(".hamburger-button").removeClass("hamburger-menu-active");
+    $(".header-nav").removeClass("hamburger-menu-active");
   });
   // function
-
-  // $('#drow a[href^="#"]').on('click', function() {
-  //   $(".button").removeClass("active");
-  //   $(".hamburger-menu-list-group").removeClass("active");
-  // });
 });
 
 
@@ -88,6 +78,9 @@ $('.js-fadein-right').waypoint({
 jQuery(function () {
   //#で始まるスタート地点をクリックしたときの処理
   jQuery('a[href^="#"]').click(function () {
+    // スクロールの高さをheaderの高さに合わせる
+    var adjust = $( 'header' ).outerHeight();
+
     //スクロールのスピード
     var speed = 800;
     //スタート地点の値
@@ -95,7 +88,7 @@ jQuery(function () {
     //ゴール地点の値
     var target = jQuery(href == "#" || href == "" ? 'html' : href);
     //ゴール地点を数値として取得
-    var position = target.offset().top;
+    var position = target.offset().top - adjust;
     jQuery('body,html').animate({ scrollTop: position }, speed, 'swing');
     return false;
   });
