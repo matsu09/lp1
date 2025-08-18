@@ -420,7 +420,7 @@ ul {
     width: 3.4375rem;
     height: 9.6875rem;
     content: "";
-    background-image: url("/assets/image/frame_right.png");
+    background-image: url("/assets/image/frame_left.png");
     background-size: contain;
   }
 
