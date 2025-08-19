@@ -168,8 +168,11 @@ ul {
 @media (min-width: 768px) {
   .header-inner {
     display: flex;
+    column-gap: 5.8%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+
+    /* justify-content: space-between; */
     max-width: 1200px;
     height: 6.25rem;
     margin: 0 auto;
@@ -368,9 +371,10 @@ ul {
 
 @media (min-width: 768px) {
   .main-visual-image {
-    min-width: 1727px;
+    /* min-width: 1727px; */
     max-width: 100%;
     min-height: 586px;
+    object-fit: cover;
   }
 }
 
@@ -390,7 +394,7 @@ ul {
     top: 0;
     right: 0;
     left: 0;
-    max-width: 62.5%;
+    max-width: 1200px;
     padding-left: 3.1rem;
     margin: 6.6rem auto 0;
   }
@@ -522,7 +526,8 @@ ul {
 @media (min-width: 768px) {
   .btn-contact {
     display: flex;
-    column-gap: 2.5rem;
+    flex-wrap: wrap;
+    gap: 0.3rem 2.5rem;
     justify-content: center;
     width: 100%;
     padding-top: 0;
